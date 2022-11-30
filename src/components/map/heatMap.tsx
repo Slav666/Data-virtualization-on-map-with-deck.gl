@@ -46,7 +46,7 @@ export default function HeatMap({
 
   return (
     <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true} layers={layers}>
-      <StaticMap className="right-[-400px] flex" reuseMaps mapStyle={mapStyle} preventStyleDiffing={true} />
+      <StaticMap className="fixed right-[-400px] flex" reuseMaps mapStyle={mapStyle} preventStyleDiffing={true} />
       {/* <NavigationControl style={NAV_CONTROL_STYLE} /> */}
     </DeckGL>
   );

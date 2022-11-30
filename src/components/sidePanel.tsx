@@ -1,7 +1,7 @@
 const SidePanel = () => {
   return (
     <div
-      className="sidebar m-h-screen left-[-300px] flex w-[300px]
+      className="sidebar left-[-300px] flex min-h-screen 
     overflow-y-auto bg-gray-900 p-2 text-center shadow duration-1000 lg:left-0"
     >
       <div className="text-xl text-gray-100">
@@ -12,14 +12,6 @@ const SidePanel = () => {
         </div>
 
         <div>
-          <div
-            className="mt-3 flex cursor-pointer items-center rounded-md 
-        bg-gray-700 p-2.5 px-4  duration-300"
-          >
-            <i className="bi bi-search text-sm"></i>
-            <input className="ml-4 w-full bg-transparent text-[15px] focus:outline-none" placeholder="Serach" />
-          </div>
-
           <div className="mt-2 flex cursor-pointer items-center rounded-md p-2.5 px-4 duration-300  hover:bg-blue-600">
             <i className="bi bi-house-door-fill"></i>
             <span className="ml-4 text-[15px] text-gray-200">First Layer</span>
