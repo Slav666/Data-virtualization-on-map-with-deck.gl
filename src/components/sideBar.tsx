@@ -3,7 +3,7 @@ interface Props {
   toggleLayer: any;
 }
 
-const SidePanel = (props: Props) => {
+const SideBar = (props: Props) => {
   return (
     <>
       {props.layers.map((layer: any) => {
@@ -20,4 +20,4 @@ const SidePanel = (props: Props) => {
     </>
   );
 };
-export default SidePanel;
+export default SideBar;
