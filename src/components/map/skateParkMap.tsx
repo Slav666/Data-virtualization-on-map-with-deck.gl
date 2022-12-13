@@ -39,17 +39,13 @@ export default function SkateParkMap() {
     <>
       <div
         className="left-[-300px] flex min-h-screen
-    overflow-y-auto bg-gray-900 p-2 text-center shadow duration-1000 lg:left-0"
+    overflow-y-auto p-2 text-center shadow duration-1000 lg:left-0"
       >
         <div className="text-xl text-gray-100">
-          <div className="mt-1 flex items-center rounded-md p-2.5 ">
-            <i className="rounded-md bg-blue-600 px-2 py-1"></i>
-            <h1 className="ml-3  text-xl font-bold text-gray-200">Slav's Map App</h1>
-          </div>
-
-          <div>
+          <h3>Click to remove layer: </h3>
+          <section>
             <SidePanel layers={layers} toggleLayer={toggleLayer} />
-          </div>
+          </section>
         </div>
       </div>
       <div style={{ height: '100vh', width: '85vw', position: 'relative', marginLeft: '20px' }}>
